@@ -1,7 +1,7 @@
 import { test, expect } from "@playwright/test";
 import { Env } from "../../../frameworkConfig/env";
 import { HomePage } from "../../pages/homePage";
-import { getOrderDetailsRandomData } from "../../testData/randomDataUtils";
+import { getOrderDetailsRandomData, getUserRandomData } from "../../testData/randomDataUtils";
 
 test("test", async ({ page }) => {
   await page.goto(Env.URL);
